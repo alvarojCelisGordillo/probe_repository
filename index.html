@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <title>Ejercicio de Ago 7</title>
+</head>
+<body>
+
+    <h1>Variable in Vue</h1> 
+    <br>
+    <div id="app">
+        
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Nombre</span>
+            <input v-model="name" type="text" class="form-control" placeholder="Nombre" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Telefono</span>
+            <input v-model="phone" type="text" class="form-control" placeholder="Telefono"  aria-describedby="basic-addon1">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Edad</span>
+            <input v-model.number="age" type="text" class="form-control" placeholder="Edad" aria-describedby="basic-addon1">
+          </div>
+
+          <button type="button" @click="message" class="btn btn-primary">Validar</button>
+          <button type="button" @click="message" class="btn btn-danger">Validar 2</button>
+    </div>
+
+       
+</body>
+
+<script src="js/vue.js"></script>
+<script src="js/app.js"></script>
+</html>
